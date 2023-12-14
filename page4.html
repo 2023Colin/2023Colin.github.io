@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Butterfly World</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #AA867A;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E1B7C9;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #9EA9D5;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  text-align: center;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #9EA9D5;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 16px;
+  color: #e1d1c2;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.tohome{
+    cursor: pointer;
+}
+
+.text{
+    width: 60%;
+}
+
+</style>
+<body>
+
+  <div class="sidebar">
+    <h2 onclick="tohome()" class="tohome">Butterfly World</h2>
+    <ul>
+      <li><a href="page1.html" target="content" >什么是蝴蝶</a></li>
+      <li><a href="page2.html" target="content">独特的蝴蝶</a></li>
+      <li><a href="page3.html" target="content">蝴蝶与自然科学</a></li>
+      <li><a href="page4.html" target="content">蝴蝶与中国文化</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>蝴蝶与中国文化</h1>
+    <div class="text">中国古代文学中，蝴蝶是一种常见的意象，诗人们用它来寄托情感，抒发自己的内心世界。蝴蝶作为创作意象，既有它特有的形态特征，又有它柔弱却顽强的生命力，还有它象征着爱情和青春等美好寓意。</div>
+
+    <h2>白居易《秋蝶》</h2>
+    <div class="text">
+        秋花紫蒙蒙，秋蝶黄茸茸。花低蝶新小，飞戏丛西东。
+        日暮凉风来，纷纷花落丛。夜深白露冷，蝶已死丛中。
+        朝生夕俱死，气类各相从。不见千年鹤，多栖百丈松。
+    </div>
+
+    <h2>张惠言《虞美人·胡蝶》</h2>
+    <div class="text">
+        斜阳谁遣来花径，春色三分定。游丝无力系花腰，忙煞枝头相途乱红飘。
+    </div>
+
+    <h2>董以宁《扑蝴蝶·咏蝶》</h2>
+    <div class="text">
+        舞态蹁跹，自小生香国。浑身腻粉，爱向花前宿。每因径曲来迟，更为墙低去速。
+        学尽颠狂轻薄。 
+    </div>
+
+    <h2>苏辙《万蝶花》</h2>
+    <div class="text">
+        谁唱残春蝶恋花，一团粉翅压枝斜。
+        美人欲向钗头插，又恐惊飞鬓似鸦。
+    </div>
+
+    </div>
+  </div>
+
+  <script>
+
+    function tohome(){
+        window.location.replace("index.html");
+    }
+
+  </script>
+
+</body>
+
+
+</html>

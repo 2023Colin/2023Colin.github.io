@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Butterfly World</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #AA867A;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E1B7C9;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #9EA9D5;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  text-align: center;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #9EA9D5;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 16px;
+  color: #e1d1c2;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.tohome{
+    cursor: pointer;
+}
+
+
+</style>
+<body>
+
+  <div class="sidebar">
+    <h2 onclick="tohome()" class="tohome">Butterfly World</h2>
+    <ul>
+      <li><a href="page1.html" target="content" >什么是蝴蝶</a></li>
+      <li><a href="page2.html" target="content">独特的蝴蝶</a></li>
+      <li><a href="page3.html" target="content">蝴蝶与自然科学</a></li>
+      <li><a href="page4.html" target="content">蝴蝶与中国文化</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>独特的蝴蝶</h1>
+    <p>这一节我将为您介绍一些独特的、神秘的、美丽的蝴蝶。</p>
+    <p>世界上有成千上万种蝴蝶，每一种都有其独特之处，包括翅膀颜色、纹理、形状和飞行习性等。</p>
+    <h2>透明蝴蝶（Glasswing Butterfly）</h2>
+    <p>透明蝴蝶的翅膀几乎是透明的，只有少量的边缘有颜色，使其看起来像是飞在空中没有翅膀一样。</p>
+    <img src="images/glasswing_butterfly.jpg" alt="Glasswing Butterfly" style="width: 100%; max-width: 400px; height: 300px;">
+    
+    <h2>孔雀蝶（Peacock Butterfly）</h2>
+    <p>孔雀蝶以其华丽而鲜艳的翅膀图案而闻名，模仿了孔雀羽毛的美丽。</p>
+    <img src="images/peacock_butterfly.jpg" alt="Peacock Butterfly">
+
+    <h2>剑尾蝶（Swordtail Butterfly）</h2>
+    <p>这类蝴蝶的后翅延长形成像剑一样的尾巴，是其独特的特征。</p>
+    <img src="images/swordtail_butterfly.jpg" alt="Peacock Butterfly">
+    
+    <h2>乌蓝凤蝶（Morpho Butterfly）</h2>
+    <p>这种蝴蝶的翅膀通常呈现出令人惊叹的蓝色，反射出光泽，使其在飞行时变得非常引人注目。</p>
+    <img src="images/morpho_butterfly.jpg" alt="Peacock Butterfly">
+
+    <h2>蓝钻石蝴蝶（Blue Diamond Butterfly）</h2>
+    <p>这种蝴蝶的翅膀呈透明的蓝色，宛如蓝色的钻石。</p>
+    <img src="images/bluediamond_butterfly.jpg" alt="Peacock Butterfly">
+
+    <h2>彩虹蝴蝶（Rainbow  Butterfly）</h2>
+    <p>其翅膀上有丰富的彩虹色斑，使其在阳光下展翅时呈现出令人惊叹的光彩。</p>
+    <img src="images/rainbow_butterfly.jpg" alt="Peacock Butterfly" style="width: 100%; max-width: 400px; height: 300px;">
+  </div>
+
+  <script>
+
+    function tohome(){
+        window.location.replace("index.html");
+    }
+
+  </script>
+
+</body>
+
+
+</html>

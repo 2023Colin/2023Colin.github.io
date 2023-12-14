@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Butterfly World</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #AA867A;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E1B7C9;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #9EA9D5;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  text-align: center;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #9EA9D5;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 16px;
+  color: #e1d1c2;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.tohome{
+    cursor: pointer;
+}
+
+.text{
+    width: 60%;
+}
+
+
+</style>
+<body>
+
+  <div class="sidebar">
+    <h2 onclick="tohome()" class="tohome">Butterfly World</h2>
+    <ul>
+      <li><a href="page1.html" target="content" >什么是蝴蝶</a></li>
+      <li><a href="page2.html" target="content">独特的蝴蝶</a></li>
+      <li><a href="page3.html" target="content">蝴蝶与自然科学</a></li>
+      <li><a href="page4.html" target="content">蝴蝶与中国文化</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>蝴蝶与自然科学</h1>
+    <p>蝴蝶在自然科学中扮演着重要的角色，涉及到生物学、生态学和进化学等多个学科领域。</p>
+    <h2>生物学</h2>
+    <div class="text">蝴蝶是昆虫的一种，属于鳞翅目。生物学家研究蝴蝶的解剖结构、生命周期、生殖方式等，以更深入地了解它们的生物学特性。蝴蝶的生命周期包括卵、幼虫、蛹和成虫四个阶段，这对生物学研究提供了丰富的素材。</div>
+    <img src="images/grow.jpg" alt="Glasswing Butterfly" style="width: 100%; max-width: 400px; height: 300px;">
+    
+    <h2>进化学</h2>
+    <div class="text">
+        蝴蝶的进化历程也是进化学研究的对象之一。科学家通过研究蝴蝶的化石记录、遗传学信息以及物种间的演化关系，可以了解它们是如何适应不同环境、发展出不同的形态和行为。
+    </div>
+    <img src="images/biaoben.jpg" alt="Glasswing Butterfly" style="width: 100%; max-width: 400px; height: 300px;">
+
+    <h2>生态学</h2>
+    <div class="text">
+        蝴蝶在生态系统中扮演着重要的角色，特别是在传粉过程中。很多蝴蝶是植物的重要传粉媒介，它们在采食花蜜的过程中将花粉带到其他植物上，促进了植物的繁殖。这种相互作用对生态平衡和生态系统的稳定性至关重要。
+    </div>
+    <img src="images/spread.jpg" alt="Glasswing Butterfly" style="width: 100%; max-width: 400px; height: 300px;">
+  </div>
+
+  <script>
+
+    function tohome(){
+        window.location.replace("index.html");
+    }
+
+  </script>
+
+</body>
+
+
+</html>

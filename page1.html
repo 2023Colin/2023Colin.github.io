@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Butterfly World</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #AA867A;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E1B7C9;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #9EA9D5;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  text-align: center;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #9EA9D5;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 16px;
+  color: #e1d1c2;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.tohome{
+    cursor: pointer;
+}
+
+
+</style>
+<body>
+
+  <div class="sidebar">
+    <h2 onclick="tohome()" class="tohome">Butterfly World</h2>
+    <ul>
+      <li><a href="page1.html" target="content" >什么是蝴蝶</a></li>
+      <li><a href="page2.html" target="content">独特的蝴蝶</a></li>
+      <li><a href="page3.html" target="content">蝴蝶与自然科学</a></li>
+      <li><a href="page4.html" target="content">蝴蝶与中国文化</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>什么是蝴蝶</h1>
+
+    <div>
+      <p>蝴蝶是一类美丽的昆虫，通常具有翅膀和鲜艳的颜色。它们是生态系统中重要的花粉传播者，也是自然界中令人着迷的生物之一。</p>
+
+      <img src="images/6ef10599796a754ad169df3a2e6d52c8dcd5b0122ae2c-LOcPvX_fw658.jpg" alt="蝴蝶图" style="width: 100%; max-width: 400px; height: auto;">
+
+       
+
+      <p>蝴蝶的生命周期经历了幼虫、蛹和成虫三个阶段，每个阶段都有着独特的特征和生活方式。它们的飞舞和翅膀上的花纹吸引着无数人的注意。</p>
+      <button onclick="showFunFact()">告诉你一个有趣的秘密</button>
+      <p id="funFact" style="display: none; color: #FF6347;">蝴蝶的翅膀颜色是由微小的鳞片组成，每一片都像彩虹一样反射光线。</p>
+      <p>在全球，有超过 20,000 种蝴蝶，它们分布在各种不同的环境中，从热带雨林到寒冷的山区。</p>
+      <img src="images/b2373e26a565684b8be5b0fdb2c780a.png" alt="" style="width: 100%; max-width: 400px; height: auto;">
+
+      <p>蝴蝶不仅仅是漂亮的昆虫，它们在生态系统中扮演着重要的角色，促进植物的繁殖和生态平衡。</p>
+
+
+    </div>
+  </div>
+
+  <script>
+    function showFunFact() {
+      var funFact = document.getElementById("funFact");
+      funFact.style.display = "block";
+      funFact.style.background = "linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red)";
+      funFact.style.webkitBackgroundClip = "text";
+      funFact.style.color = "transparent";
+    }
+
+    function tohome(){
+        window.location.replace("index.html");
+    }
+
+  </script>
+
+</body>
+
+
+</html>
